@@ -146,3 +146,13 @@ sudo ln -s /opt/vc/lib/libGLESv2.so /opt/vc/lib/libGLESv2.so.2
 cd ~
 ./qopenglwidget
 ```
+
+## Adding other Qt Modules:
+```
+git clone git://code.qt.io/qt/<qt-module>.git -b 5.9
+cd <qt-module>
+
+~/raspi/qt5/bin/qmake
+make
+make install
+```
